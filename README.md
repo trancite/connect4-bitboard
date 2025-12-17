@@ -53,7 +53,7 @@ The engine displays detailed metrics while it "thinks". Here's what they mean:
 
    * The engine processes approximately **5,500,000 nodes per second** on standard modern hardware.
    * Evaluates 6 million possible future positions every second.
-   * **Smart Node Evaluation Mode:** Dynamically balances search depth and speed by selectively pruning less promising branches. The engine can **anticipate losing positions** and skip their full evaluation, drastically reducing unnecessary depth while maintaining optimal decision quality.
+   * **Smart Node Evaluation Mode:** The engine can **anticipate losing positions** and skip their full evaluation, drastically reducing unnecessary depth while maintaining optimal decision quality.
 
 2. **EBF (Effective Branching Factor):**
 
