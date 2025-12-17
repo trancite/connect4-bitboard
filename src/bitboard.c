@@ -834,6 +834,7 @@ int get_best_move_general_negamax(Bitboard *root, double allowed_seconds, int ve
     else
     {
         printf("Search finished. Depth: %d. Time: %.3fs\n", reached_depth, final_time);
+        wait_seconds(1);
     }
     fflush(stdout);
     root->value = score_final;
