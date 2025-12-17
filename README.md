@@ -86,7 +86,7 @@ During development, several standard chess engine heuristics were implemented, p
 *   **Killer Moves & History Heuristic:** Implemented but removed.
     *   *Reason:* Connect 4 has a very low branching factor (max 7 moves) compared to Chess. The overhead of maintaining history tables slowed down the search (lower NPS) without significantly improving the Alpha-Beta cut-off rate.
         - While I know that implementations like **Fhourstones** benefit from these techniques, I prefer this approach: ordering moves according to **threats created** and selective evaluation.
-    *   *Solution:* A strict **"Threat-First" move ordering** (winning moves > blocking moves > center columns) proved to be the most efficient strategy for this specific game complexity.
+    *   *Solution:* A strict **"Threat-First" move ordering** (winning moves > blocking/threating moves > center columns) proved to be the most efficient strategy for this specific game complexity.
 *   **Transposition Table Sizing:**
     *   Used a Two-Tier bucket system (Deepest + Newest) to handle collisions, preventing valuable deep-search data from being overwritten by shallow searches in the same hash index.
 
