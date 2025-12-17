@@ -831,7 +831,7 @@ int get_best_move_general_negamax(Bitboard *root, double allowed_seconds, int ve
         fflush(stdout);
         wait_seconds(1);
     }
-    else
+    else if (verbose)
     {
         printf("Search finished. Depth: %d. Time: %.3fs\n", reached_depth, final_time);
         wait_seconds(1);
@@ -934,7 +934,7 @@ int get_best_move_negamax(Bitboard *root, double allowed_seconds, int verbose)
         printf(">>> POTENTIAL DEFEAT IN %d MOVES (Total time: %.3fs) <<<\n", (plies + 1) / 2, final_time);
         wait_seconds(1);
     }
-    else
+    else if (verbose)
     {
         printf("Search finished. Depth: %d. Time: %.3fs\n", reached_depth, final_time);
         wait_seconds(1);
