@@ -18,15 +18,14 @@ jobs:
       with:
         msystem: MINGW64
         update: true
+        path-type: strict
         install: >
           mingw-w64-x86_64-gcc
           mingw-w64-x86_64-make
 
-    - name: Compile with mingw32-make (cmd.exe)
+    - name: Compile with mingw32-make
       shell: cmd
-      run: >
-        set PATH=%PATH%;C:\msys64\mingw64\bin &&
-        mingw32-make
+      run: mingw32-make SHELL=cmd.exe
 
     - name: Upload Executable
       uses: actions/upload-artifact@v4
