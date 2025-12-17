@@ -99,7 +99,11 @@ This project includes a smart build system that detects your OS automatically.
 ### Compilation
 
 ```bash
+# Linux / macOS
 make
+
+# Windows
+.\build.bat
 ```
 
 It will automatically detect if you are on Linux, macOS, or Windows and apply optimization flags -O3 -march=native -flto.
