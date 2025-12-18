@@ -338,8 +338,8 @@ void game_menu()
         printf("Board: %dx%d (Connect %d) | You: O (AI: X) | Start: %c | Spin: %.0f%% | AI Time: %.1fs\n",
                 N, M, k, start_player, spin_prob * 100.0, ai_time_limit);
         printf("----------------------------------------------------------------------\n");
-        printf("1. Play vs Bitboard AI (Maximum depth, no heuristic)\n");
-        printf("2. Play vs Bitboard AI (with Heuristic).\n");
+        printf("1. Play vs Bitboard AI (Maximum depth, very hard on medium boards)\n");
+        printf("2. Play vs Bitboard AI (with heuristic).\n");
         printf("3. Play with someone else\n");
         printf("4. Change board settings\n");
         printf("5. Change starting player\n");
