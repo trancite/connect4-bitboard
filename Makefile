@@ -1,4 +1,4 @@
-TARGET_NAME = connect4
+TARGET_NAME = connectK
 
 SRC_DIR = src
 INC_DIR = include
